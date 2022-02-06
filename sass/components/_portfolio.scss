@@ -1,0 +1,126 @@
+.current {
+  color: var(--accent-color);
+}
+
+.all-service-menu__paragraph {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  height: 100%;
+  width: 100%;
+  padding: 63px 24px 63px 24px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 250ms;
+}
+
+
+.all-service-menu__container {
+  position: relative;
+  overflow: hidden;
+ &:hover 
+{
+    .all-service-menu__paragraph {
+  transform: translateY(0);
+}
+}
+}
+
+.service-menu {
+  background-color: #ffffff;
+}
+
+
+.all-service-menu__item {
+  flex-basis: calc(100% / 3 - 30px);
+  width: 370px;
+  margin-bottom: 30px;
+  &:not(:nth-child(3n)) {
+  margin-right: 30px;
+  &:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: box-shadow, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+}
+
+
+.all-service-menu__container-card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 110px;
+  padding: 24px 24px 24px 24px;
+  background: var(--background-color);
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.service-menu__list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.service-menu__btm {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+  cursor: pointer;
+  margin-right: 8px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+  color: var(--background-color);
+  background: #2196f3;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+
+
+.all-service-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.all-service-menu__paragraph-card {
+  margin-top: 4px;
+    font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--paragrapf-color);
+}
+
+.service-menu__title {
+  display: none;
+}
+
+.all-service-menu__title-card {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--h-color);
+}
+
