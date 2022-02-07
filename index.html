@@ -25,79 +25,89 @@
     <div class="layout">
       <header class="header">
         <div class="container header__container">
-          <a class="header-logo link" href="./index.html" lang="en"
-            ><samp class="header-logo__web">Web</samp>Studio</a
-          >
-          <nav class="header-nav">
-            <ul class="header-nav__list list">
-              <li class="header-nav__item">
-                <a class="header-nav__link link current" href="./index.html"
-                  >Студия</a
-                >
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link link" href="./portfolio.html"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-connect">
-            <ul class="header-address__list list">
-              <li class="header-address__item">
-                <a
-                  class="header-address__link link"
-                  href="mailto:info@devstudio.com"
-                >
-                  <svg class="header-address__icon" width="16" height="12">
-                    <use href="./images/icons.svg#envelope" />
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header-address__item">
-                <a class="header-address__link link" href="tel:+380961111111">
-                  <svg class="header-address__icon" width="10" height="16">
-                    <use href="./images/icons.svg#smartphone" />
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a class="header-logo link" href="./index.html" lang="en">
+            <samp class="header-logo__web">Web</samp>Studio
+          </a>
+
+          <button type="button" class="header-modal__open-btn" data-header-modal-open>
+            <svg class="heder-modal__icon" width="11" height="11">
+              <use href="./images/vector-sptite.svg#icon-Vector" />
+            </svg>
+          </button>
+
         </div>
-        <section class="heder-modal">
-          <div class="heder-modal__backdrop is-hidden">
-            <div class="heder-modal__container">
-              <button type="button" class="heder-modal__close-btn">
+        <section class="header-modal">
+          <div class="header-modal__backdrop is-hidden " data-header-modal>
+            <div class="header-modal__container">
+              <button type="button" class="header-modal__close-btn " data-header-modal-close>
                 <svg class="heder-modal__icon" width="11" height="11">
                   <use href="./images/vector-sptite.svg#icon-Vector" />
                 </svg>
               </button>
-              <button type="submit" class="heder-modal__submit-btn">
-                Отправить
-              </button>
-
-              <div class="modal-heckbox__container">
-                <input
-                  type="checkbox"
-                  name="policy"
-                  id="policy"
-                  class="modal-heckbox__check visually-hidden"
-                />
-                <label class="modal-heckbox__text" for="policy">
-                  <span>
-                    <svg class="modal-heckbox__icon" width="16" height="15">
-                      <use href="./images/victory.svg#icon--" />
-                    </svg>
-                  </span>
-                  Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="modal-heckbox__link">Условия договора</a>
-                </label>
+              
+              <nav class="header-nav">
+                <ul class="header-nav__list list">
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link current" href="./index.html"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link" href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-connect">
+                <ul class="header-address__list list">
+                  <li class="header-address__item">
+                    <a class="header-address__link link" href="tel:+380961111111">
+                      <!-- <svg class="header-address__icon" width="10" height="16">
+                        <use href="./images/icons.svg#smartphone" /> -->
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                  <li class="header-address__item">
+                    <a
+                      class="header-address__link link"
+                      href="mailto:info@devstudio.com"
+                    >
+                      <!-- <svg class="header-address__icon" width="16" height="12">
+                        <use href="./images/icons.svg#envelope" />
+                      </svg> -->
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="list social__list">
+                  <li class="social__item item">
+                    <a href="#" class="social__link link">
+                      <p class="social__icon">Instagram</p>
+                    </a>
+                  </li>
+                   <li class="social__item">
+                    <a href="#" class="social__link link">
+                      <p class="social__icon">Twitter</p>
+                    </a>
+                  </li>
+                   <li class="social__item">
+                    <a href="#" class="social__link link">
+                      <p class="social__icon">Facebook</p>
+                    </a>
+                  </li>
+                   <li class="social__item">
+                    <a href="#" class="social__link link">
+                      <p class="social__icon">LinkedIn</p>
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </div>
             </div>
           </div>
         </section>
@@ -678,5 +688,6 @@
     </section>
 
     <script src="./js/modal.js"></script>
+     <!-- <script src="./js/modal.js">1</script> -->
   </body>
 </html>

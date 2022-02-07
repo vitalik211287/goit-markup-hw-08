@@ -66,7 +66,7 @@ border: solid var(--accent-color) ;
 }
 
 textarea  {
-width: 448px;
+width: 100%;
 max-height: 120px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -83,20 +83,26 @@ outline: none;
 .modal-heckbox__link {
 color: var(--accent-color);
 margin-left: 2px;
+
     }
 
 .modal-heckbox__text {
-display: flex;
-align-items: center;
-margin-left: 12px;
+// display: flex;
+// align-items: center;
+// margin-left: 12px;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+
+color: #757575;
  &  span{
-width: 16px;
-height: 15px;   
+width: 5px;
+height: 5px;   
 border-radius: 2px;
 border: 2px solid var(--h-color);
 margin-right: 7px;
-display: flex;
-align-items: center;
+// display: flex;
+// align-items: center;
     }
     &:hover  span {
         cursor: pointer;
@@ -114,4 +120,9 @@ align-items: center;
      .modal-heckbox__check:checked ~ .modal-heckbox__text .modal-heckbox__icon {
     fill: #FFFFFF;
      }
-  
+
+.modal-heckbox__par {  font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.03em;
+color: #757575;}
