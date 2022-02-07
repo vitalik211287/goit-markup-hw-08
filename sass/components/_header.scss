@@ -2,7 +2,7 @@
   color: var(--accent-color);
   &::after {
     content: "  ";
-    display: flex;
+    // display: flex;
     border-radius: 2%;
     transition: background-color 250ms linear;
     position: absolute;
@@ -25,15 +25,15 @@
   border: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
+// .header__container {
+//   display: flex;
+//   align-items: center;
+// }
 
 .header-connect {
   margin-left: auto;
   min-width: 307px;
-  justify-content: space-between;
+//   justify-content: space-between;
 }
 
 .header-nav {
@@ -43,11 +43,11 @@
   margin-left: 93px;
 }
 
-.header-nav__list,
-.header-address__list {
-  display: flex;
-  justify-content: space-between;
-}
+// .header-nav__list,
+// .header-address__list {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -88,10 +88,10 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--paragrapf-color);
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-  transition: var(--transition);
+//   display: flex;
+//   align-items: center;
+//   margin-left: 30px;
+//   transition: var(--transition);
   &:hover, &:focus {
   color: var(--accent-color);
 }

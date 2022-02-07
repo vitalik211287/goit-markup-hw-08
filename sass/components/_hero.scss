@@ -1,10 +1,10 @@
 .hero {
   padding: 0;
   background: #2f303a;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  max-width: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -16,12 +16,12 @@
  
 }
 
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 200px;
-}
+// .btn-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   padding-bottom: 200px;
+// }
 
 .hero__btn {
   font-weight: bold;
@@ -43,9 +43,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
-  padding-top: 200px;
-  padding-left: 252px;
-  margin-bottom: 30px;
-  padding-right: 252px;
+//   padding-top: 200px;
+//   padding-left: 252px;
+//   margin-bottom: 30px;
+//   padding-right: 252px;
 }
 
