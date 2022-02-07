@@ -5,10 +5,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragrapf-color);
-//   display: flex;
-//   justify-content: center;
-//   box-sizing: border-box;
-  width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   box-sizing: border-box;
+  min-width: 480px;
 }
 
 .list {
