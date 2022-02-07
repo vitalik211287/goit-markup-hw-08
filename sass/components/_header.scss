@@ -24,10 +24,11 @@
   height: 60px;
 }
 
-// .header__container {
+.header__container {
 //   display: flex;
 //   align-items: center;
-// }
+position: relative;
+}
 
 .header-connect {
   margin-left: auto;

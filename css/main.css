@@ -87,6 +87,10 @@ body {
   height: 60px;
 }
 
+.header__container {
+  position: relative;
+}
+
 .header-connect {
   margin-left: auto;
   min-width: 307px;
@@ -217,10 +221,6 @@ body {
 .what-are-we-doing__container {
   width: 480px;
   background-color: ffffff;
-}
-
-.advantage__item {
-  text-align: center;
 }
 
 .advantage__link {
@@ -647,7 +647,6 @@ body {
 }
 
 .all-service-menu__paragraph {
-  display: flex;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -664,6 +663,7 @@ body {
 }
 
 .all-service-menu__container {
+  width: 450px;
   position: relative;
   overflow: hidden;
 }
@@ -677,8 +677,7 @@ body {
 }
 
 .all-service-menu__item {
-  flex-basis: calc(100% / 3 - 30px);
-  width: 370px;
+  width: 100%px;
   margin-bottom: 30px;
 }
 
@@ -693,9 +692,7 @@ body {
 }
 
 .all-service-menu__container-card {
-  display: flex;
-  flex-direction: column;
-  width: 370px;
+  width: 450px;
   height: 110px;
   padding: 24px 24px 24px 24px;
   background: var(--background-color);
@@ -708,8 +705,9 @@ body {
 
 .service-menu__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 50px;
-  justify-content: center;
 }
 
 .service-menu__btm {
@@ -735,11 +733,8 @@ body {
 }
 
 .all-service-menu__list {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -30px;
   box-sizing: border-box;
-  justify-content: center;
 }
 
 .all-service-menu__paragraph-card {
@@ -760,6 +755,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--h-color);
+}
+
+.portfolio-img {
+  background-image: cover;
 }
 
 .modal {
@@ -945,10 +944,14 @@ textarea {
 
 .modal-heckbox__link {
   color: var(--accent-color);
-  margin-left: 2px;
+}
+
+.modal-heckbox__container {
+  position: relative;
 }
 
 .modal-heckbox__text {
+  margin-left: 24px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -956,8 +959,12 @@ textarea {
 }
 
 .modal-heckbox__text span {
-  width: 5px;
-  height: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
   border-radius: 2px;
   border: 2px solid var(--h-color);
   margin-right: 7px;
@@ -980,16 +987,10 @@ textarea {
   fill: #FFFFFF;
 }
 
-.modal-heckbox__par {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 .header-modal {
   padding: 0;
+  position: absolute;
+  z-index: 2;
 }
 
 .header-modal__backdrop {
@@ -1009,30 +1010,46 @@ textarea {
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-.header-modal__close-btn, .header-modal__open-btn {
-  width: 30px;
-  height: 30px;
-  background: var(--background-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  color: #000000;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-modal__close-btn:hover, .header-modal__open-btn:hover {
-  color: var(--accent-color);
+  position: relative;
 }
 
 .header-modal__icon {
   fill: currentColor;
+}
+
+.header-modal__open-btn {
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  bottom: 22px;
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-modal__open-btn:hover {
+  color: var(--accent-color);
+}
+
+.header-modal__close-btn {
+  width: 30px;
+  height: 30px;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-modal__close-btn:hover {
+  color: var(--accent-color);
 }
 
 .header-modal__title {
@@ -1049,7 +1066,7 @@ textarea {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .social__list {

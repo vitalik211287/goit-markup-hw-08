@@ -82,22 +82,29 @@ outline: none;
 
 .modal-heckbox__link {
 color: var(--accent-color);
-margin-left: 2px;
+// margin-left: 2px;
 
+    }
+    .modal-heckbox__container {
+        position: relative;
     }
 
 .modal-heckbox__text {
 // display: flex;
 // align-items: center;
-// margin-left: 12px;
+margin-left: 24px;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 
 color: #757575;
  &  span{
-width: 5px;
-height: 5px;   
+     display:inline-block;
+   position: absolute;
+   bottom: 5px;
+   left: 0;
+width: 15px;
+height: 15px;   
 border-radius: 2px;
 border: 2px solid var(--h-color);
 margin-right: 7px;
@@ -121,8 +128,8 @@ margin-right: 7px;
     fill: #FFFFFF;
      }
 
-.modal-heckbox__par {  font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.03em;
-color: #757575;}
+// .modal-heckbox__par {  font-weight: normal;
+// font-size: 12px;
+// line-height: 14px;
+// letter-spacing: 0.03em;
+// color: #757575;}

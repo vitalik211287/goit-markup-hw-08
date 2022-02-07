@@ -3,7 +3,7 @@
 }
 
 .all-service-menu__paragraph {
-  display: flex;
+//   display: flex;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -21,6 +21,7 @@
 
 
 .all-service-menu__container {
+    width: 450px;
   position: relative;
   overflow: hidden;
  &:hover 
@@ -37,8 +38,8 @@
 
 
 .all-service-menu__item {
-  flex-basis: calc(100% / 3 - 30px);
-  width: 370px;
+//   flex-basis: calc(100% / 3 - 30px);
+  width: 100%px;
   margin-bottom: 30px;
   &:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -53,9 +54,9 @@
 
 
 .all-service-menu__container-card {
-  display: flex;
-  flex-direction: column;
-  width: 370px;
+//   display: flex;
+//   flex-direction: column;
+  width: 450px;
   height: 110px;
   padding: 24px 24px 24px 24px;
   background: var(--background-color);
@@ -68,8 +69,10 @@
 
 .service-menu__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 50px;
-  justify-content: center;
+//   justify-content: center;
 }
 
 .service-menu__btm {
@@ -97,11 +100,12 @@
 
 
 .all-service-menu__list {
-  display: flex;
-  flex-wrap: wrap;
+//   display: flex;
+//   flex-wrap: wrap;
   margin-bottom: -30px;
+//   width: 480px;
   box-sizing: border-box;
-  justify-content: center;
+//   justify-content: center;
 }
 
 .all-service-menu__paragraph-card {
@@ -122,5 +126,8 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--h-color);
+}
+.portfolio-img {
+   background-image: cover;
 }
 
