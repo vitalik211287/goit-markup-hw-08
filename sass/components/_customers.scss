@@ -1,10 +1,11 @@
 .customers__item {
   width: 210px;
   height: 92px;
-}
-.customers__item:not(:last-child) {
-  //   margin-left: 30px;
   margin-bottom: 30px;
+}
+.customers__item:nth-last-child(-n+2) {
+  //   margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 .customers__link {

@@ -174,7 +174,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/little-pictures/Hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -400,10 +400,11 @@ body {
 .customers__item {
   width: 210px;
   height: 92px;
+  margin-bottom: 30px;
 }
 
-.customers__item:not(:last-child) {
-  margin-bottom: 30px;
+.customers__item:nth-last-child(-n+2) {
+  margin-bottom: 0px;
 }
 
 .customers__link {
@@ -718,7 +719,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--h-color);
   cursor: pointer;
-  margin-right: 8px;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
@@ -730,6 +730,15 @@ body {
   background: #2196f3;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.service-menu__list > li {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.service-menu__list > li:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 .all-service-menu__list {
