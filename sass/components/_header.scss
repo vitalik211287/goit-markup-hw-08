@@ -122,5 +122,10 @@ position: relative;
   margin-right: 10px;
   fill: currentColor;
 }
+.header-modal__container, .header-modal__backdrop {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
 
 

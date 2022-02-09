@@ -208,13 +208,50 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 480px) {
+  .header-modal__container, .header-modal__backdrop {
+    display: none;
+  }
+}
+
 .hero {
   background: #2f303a;
-  height: 400px;
+  height: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 480;
+    height: 400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768;
+    padding-top: 200px;
+    padding-left: 204px;
+    padding-right: 204px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200;
+    height: 600px;
+    padding-top: 200px;
+    padding-left: 252px;
+    padding-right: 252px;
+    padding-top: 200px;
+  }
 }
 
 .btn-container {
@@ -244,13 +281,6 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 30px;
-}
-
-.hero__container {
-  height: 400px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 118px;
 }
 
 .what-are-we-doing__container {
@@ -460,6 +490,13 @@ body {
 @media screen and (min-width: 1200px) {
   .employee__container {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1310,6 +1347,12 @@ textarea {
 
 .header-modal__open-btn:hover {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .header-modal__open-btn {
+    display: none;
+  }
 }
 
 .header-modal__close-btn {
