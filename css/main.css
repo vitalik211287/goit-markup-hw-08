@@ -217,41 +217,12 @@ body {
 .hero {
   background: #2f303a;
   height: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/little-pictures/Hero3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 480px) {
-  .hero {
-    width: 480;
-    height: 400px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 118px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768;
-    padding-top: 200px;
-    padding-left: 204px;
-    padding-right: 204px;
-    padding-top: 118px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1200;
-    height: 600px;
-    padding-top: 200px;
-    padding-left: 252px;
-    padding-right: 252px;
-    padding-top: 200px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-container {
@@ -281,6 +252,44 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__container {
+    width: 480px;
+    height: 400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+    padding-top: 200px;
+    padding-left: 204px;
+    padding-right: 204px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-left: 252px;
+    padding-right: 252px;
+    padding-top: 200px;
+  }
 }
 
 .what-are-we-doing__container {
@@ -449,9 +458,13 @@ body {
 }
 
 .our-team {
-  width: 100%;
-  height: 100%;
   background: #f5f4fa;
+}
+
+.our-team__img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .employee-social__list {
@@ -461,42 +474,50 @@ body {
   padding-left: 32px;
 }
 
-.employee-social__item + .employee-social__item {
-  margin-left: 10px;
-}
-
 .employee__container {
   background-color: var(--background-color);
-  width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .employee__container {
-    width: 450px;
-    padding: 60px 15px 60px 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .employee__container {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .employee__container {
-    width: 270px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .our-team__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.our-team__item {
+  width: 450px;
+  height: 630px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    width: 354px;
+    height: 536px;
+  }
+  .our-team__item:nth-last-child(2n+2) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    width: 270px;
+    height: 428px;
+  }
+  .our-team__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -548,10 +569,6 @@ body {
 
 .employee-social__icon {
   fill: currentColor;
-}
-
-.our-team__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .customers__item {
@@ -1104,6 +1121,24 @@ body {
   padding: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal__container {
+    top: 55%;
+    bottom: 50%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__container {
+    width: 528px;
+    height: 581px;
+    top: 40%;
+    bottom: 50%;
+    left: 50%;
+  }
+}
+
 .modal__close-btn {
   width: 30px;
   height: 30px;
@@ -1285,8 +1320,22 @@ textarea {
   margin-right: 7px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-heckbox__text span {
+    left: 13px;
+  }
+}
+
 .modal-heckbox__text:hover span {
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-heckbox__text {
+    font-size: 14px;
+    line-height: 1.7;
+    padding-left: 13px;
+  }
 }
 
 .modal-heckbox__icon {
