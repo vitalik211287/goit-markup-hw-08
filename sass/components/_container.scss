@@ -1,34 +1,20 @@
-// // .container {
-// //   min-width: 100%;
-// // //   padding-left: 15px;
-// // //   padding-right: 15px;
-// // //   margin: auto;
-// //   box-sizing: border-box;
-//   @media screen and (min-widht: 480px) {
-//       width: 480px;
-//   }
-//    @media screen and (min-widht: 768px) {
-//       width: 768px;
-//   }
-//   @media screen and (min-widht: 1140px) {
-//       width: 1140px;
-//   }
-// }
 .container {
-      width: 480px;
-      box-sizing: border-box;
-      
-      @media screen and (min-width: 480px) {
-            width: 480px;
-            padding: 60px 15px 60px 15px;
-      }
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+     padding: 60px 15px 60px 15px;
 
-      @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+
+    @media screen and (min-width: 768px) {
             width: 768px;
-            
-      }
-      @media screen and (min-width: 1200px) {
+        }
+
+    @media screen and (min-width: 1200px) {
             width: 1200px;
-            
-      }
+            height: 100%;
+            padding: 94px 15px 94px 15px;
+    }
 }
