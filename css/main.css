@@ -105,6 +105,24 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .current {
+    color: var(--accent-color);
+  }
+  .current::after {
+    content: "  ";
+    border-radius: 2%;
+    transition: background-color 250ms linear;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}
+
 .header {
   background: var(--background-color);
   border: 1px solid #ececec;
@@ -236,8 +254,30 @@ body {
 }
 
 .what-are-we-doing__container {
-  width: 480px;
   background-color: ffffff;
+}
+
+.advantage__item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .advantage__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    width: 270px;
+    margin-bottom: 0;
+  }
+  .advantage__item:nth-last-child(n+3) {
+    margin-right: 30px;
+  }
 }
 
 .advantage__link {
@@ -251,9 +291,31 @@ body {
   border-radius: 4px;
 }
 
-.advantage__list {
-  justify-content: space-between;
-  width: 480px;
+@media screen and (min-width: 768px) {
+  .advantage__link {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__link {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__list {
+    display: flex;
+    margin-bottom: 94px;
+  }
 }
 
 .advantage-invisible {
@@ -273,13 +335,31 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__title {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
 .advantage__text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--paragrapf-color);
-  max-width: 450px;
-  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__text {
+    width: 354px;
+    width: 270px;
+  }
 }
 
 .what-are-we-doing__text {
@@ -322,13 +402,17 @@ body {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .what-are-we-doing__title {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+.what-are-we-doing__list {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
   .what-are-we-doing__list {
     display: none;
   }

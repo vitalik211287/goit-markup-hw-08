@@ -1,19 +1,22 @@
-// .current {
-//   color: var(--accent-color);
-//   &::after {
-//     content: "  ";
-//     // display: flex;
-//     border-radius: 2%;
-//     transition: background-color 250ms linear;
-//     position: absolute;
-//     left: 0;
-//     bottom: -32px;
-//     width: 100%;
-//     height: 4px;
-//     border-radius: 2px;
-//     background-color: var(--accent-color);
-//   }
-// }
+.current {
+  @media screen and (min-width: 768px) {
+    color: var(--accent-color);
+    &::after {
+    content: "  ";
+    // display: flex;
+    border-radius: 2%;
+    transition: background-color 250ms linear;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+  }
+  
+}
 
 
 

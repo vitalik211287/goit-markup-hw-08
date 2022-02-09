@@ -34,15 +34,15 @@
   letter-spacing: 0.03em;
   color: var(--h-color);
   margin-bottom: 50px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1200px) {
   display: none;  
 }
   
 }
 
 .what-are-we-doing__list {
-//   display: flex;
-@media screen and (max-width: 480px) {
+  display: flex;
+@media screen and (max-width: 1200px) {
   display: none;  
 }
 }
