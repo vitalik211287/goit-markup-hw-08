@@ -3,6 +3,9 @@
   padding: 0;
   position: absolute;
   z-index: 2;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 }
 
 .header-modal__backdrop {

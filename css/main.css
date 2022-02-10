@@ -131,6 +131,12 @@ body {
   height: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
+}
+
 .header__container {
   position: relative;
 }
@@ -1056,6 +1062,12 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .service-menu__list {
+    justify-content: center;
+  }
+}
+
 .service-menu__btm {
   font-weight: 500;
   font-size: 16px;
@@ -1403,6 +1415,12 @@ textarea {
   z-index: 2;
 }
 
+@media screen and (min-width: 480px) {
+  .header-modal {
+    display: none;
+  }
+}
+
 .header-modal__backdrop {
   position: fixed;
   top: 0%;
@@ -1498,5 +1516,94 @@ textarea {
 .social__item + .social__item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 10px;
+}
+
+.header-adress-nav__container {
+  display: flex;
+  width: 761px;
+  position: absolute;
+  top: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-adress-nav__container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .current {
+    color: var(--accent-color);
+  }
+  .current::after {
+    content: "  ";
+    display: flex;
+    border-radius: 2%;
+    transition: background-color 250ms linear;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}
+
+.header-adress-nav__connect {
+  margin-left: 100px;
+  min-width: 307px;
+}
+
+.header-adress-nav__nav {
+  width: 294px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 238px;
+}
+
+.header-adress-nav__nav__item {
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+
+.header-adress-nav__nav__list,
+.header-adress-nav__address__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-adress-nav__nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  transition: var(--transition);
+  position: relative;
+}
+
+.header-adress-nav__nav__link:hover, .header-adress-nav__nav__link:focus, .header-adress-nav__nav__link:active {
+  color: var(--accent-color);
+}
+
+.header-adress-nav__address__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--paragrapf-color);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.header-adress-nav__address__link:hover, .header-adress-nav__address__link:focus {
+  color: var(--accent-color);
+}
+
+.header-adress-nav__address__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

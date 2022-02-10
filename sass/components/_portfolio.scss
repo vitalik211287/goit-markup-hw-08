@@ -80,13 +80,6 @@
 
 }
 
-
-
-
-
-
-
-
 .all-service-menu__container-card {
 //   display: flex;
 //   flex-direction: column;
@@ -106,8 +99,11 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+      justify-content: center;
+  }
   
-//   justify-content: center;
+
 }
 
 .service-menu__btm {

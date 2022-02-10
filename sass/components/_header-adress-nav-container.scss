@@ -1,0 +1,115 @@
+ .header-adress-nav__container {
+   display: flex;
+   width: 761px;
+     //  margin-left: 93px;
+   position: absolute;
+   top: 25px;
+  //  z-index: 5;
+   @media screen and (max-width: 480px) {
+  display: none;
+  }
+  // display: none;
+ }
+    
+    .current {
+    @media screen and (min-width: 768px) {
+      color: var(--accent-color);
+      &::after {
+      content: "  ";
+      display: flex;
+      border-radius: 2%;
+      transition: background-color 250ms linear;
+      position: absolute;
+      left: 0;
+      bottom: -32px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  .header-adress-nav__connect {
+    margin-left: 100px;
+    min-width: 307px;
+  //   justify-content: space-between;
+  }
+  
+  .header-adress-nav__nav {
+   width: 294px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 238px;
+  
+  }
+  .header-adress-nav__nav__item {
+    margin-bottom: 30px;
+   margin-right: 50px;
+  }
+  
+  .header-adress-nav__nav__list,
+  .header-adress-nav__address__list {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  
+  .header-adress-nav__nav__link {
+    // width: 77px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  transition: var(--transition);
+  position: relative;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+  }
+  
+  .header-adress-nav__address__link {
+    font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--paragrapf-color);
+  display: flex;
+  align-items: center;
+  // margin-left: 30px;
+  transition: var(--transition);
+  &:hover, &:focus {
+  color: var(--accent-color);
+}
+  }
+  
+  // .header__container {
+  //   padding: 16px 331px 16px 15px;
+  //   height: 60px ;
+  // //   width: 100% ;
+  // }
+  .header-adress-nav__address__item {
+    // margin-bottom: 32px;
+  }
+  .header-adress-nav__address__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  // .header-adress-nav__modal__container, .header-adress-nav__modal__backdrop {
+  //   @media screen and (min-width: 480px) {
+  //     display: none;
+  //   }
+  // }
