@@ -984,6 +984,7 @@ body {
 
 .all-service-menu__container {
   width: 450px;
+  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -992,27 +993,52 @@ body {
   transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) {
+  .all-service-menu__container {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .all-service-menu__container {
+    width: 370px;
+    height: 294px;
+  }
+}
+
 .service-menu {
   background-color: #ffffff;
 }
 
 .all-service-menu__item {
-  width: 100%px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
-.all-service-menu__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .all-service-menu__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }
 
-.all-service-menu__item:not(:nth-child(3n)):hover {
+@media screen and (min-width: 1200px) {
+  .all-service-menu__item {
+    margin-right: 30px;
+  }
+  .all-service-menu__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.all-service-menu__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition: box-shadow, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .all-service-menu__container-card {
-  width: 450px;
+  width: 100%;
   height: 110px;
   padding: 24px 24px 24px 24px;
   background: var(--background-color);
@@ -1082,6 +1108,8 @@ body {
 
 .portfolio-img {
   background-image: cover;
+  width: 100%;
+  display: block;
 }
 
 .all-service-menu__list {
@@ -1094,14 +1122,12 @@ body {
 
 .all-service-menu__item {
   width: 450px;
-  height: 294px;
+  height: 404px;
 }
 
 @media screen and (min-width: 768px) {
   .all-service-menu__item {
     width: 354px;
-    height: 404px;
-    margin-bottom: 50px;
     height: 404px;
   }
 }
