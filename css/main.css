@@ -1081,6 +1081,12 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .service-menu__list {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .service-menu__list {
     justify-content: center;
@@ -1604,7 +1610,7 @@ textarea {
   width: 294px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 238px;
+  margin-left: 220px;
   padding-top: 32px;
   height: 100%;
 }

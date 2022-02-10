@@ -17,16 +17,56 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
     <body>
-             <header class="header">
+     <header class="header">
         <div class="container header__container">
-          <a class="header-logo link" href="./index.html" lang="en">
-            <samp class="header-logo__web">Web</samp>Studio
-          </a>
-          <button type="button" class="header-modal__open-btn" data-header-modal-open>
+             <button type="button" class="header-modal__open-btn" data-header-modal-open>
             <svg class="header-modal__icon" width="24" height="16">
               <use href="./images/mobile/svg/symbol-defs.svg#icon-menu_24px" />
             </svg>
           </button>
+          <a class="header-logo link" href="./index.html" lang="en">
+            <samp class="header-logo__web">Web</samp>Studio
+          </a>
+          <div class="header-adress-nav__container">
+            <nav class="header-adress-nav__nav">
+            <ul class="header-adress-nav__nav__list list">
+              <li class="header-adress-nav__nav__item">
+                <a class="header-adress-nav__nav__link link current" href="./index.html"
+                  >Студия</a>
+              </li>
+              <li class="header-adress-nav__nav__item">
+                <a class="header-adress-nav__nav__link link" href="./portfolio.html"
+                  >Портфолио</a>
+              </li>
+              <li class="header-adress-nav__nav__item">
+                <a class="header-adress-nav__nav__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-adress-nav__connect">
+            <ul class="header-adress-nav__address__list list">
+                <li class="header-adress-nav__address__item">
+                <a
+                  class="header-adress-nav__address__link link"
+                  href="mailto:info@devstudio.com">
+                  <svg class="header-adress-nav__address__icon-mail" >
+                    <use href="./images/icons.svg#envelope" />
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-adress-nav__address__item">
+                <a class="header-adress-nav__address__link link" href="tel:+380961111111">
+                  <svg class="header-adress-nav__address__icon-tel" >
+                    <use href="./images/icons.svg#smartphone" />
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              
+            </ul>
+         </div>
+         
         </div>
         <section class="header-modal">
           <div class="header-modal__backdrop is-hidden" data-header-modal>
@@ -39,11 +79,11 @@
               <nav class="header-nav">
                 <ul class="header-nav__list list">
                   <li class="header-nav__item">
-                    <a class="header-nav__link link " href="./index.html"
+                    <a class="header-nav__link link current" href="./index.html"
                       >Студия</a>
                   </li>
                   <li class="header-nav__item">
-                    <a class="header-nav__link link current" href="./portfolio.html"
+                    <a class="header-nav__link link" href="./portfolio.html"
                       >Портфолио</a>
                   </li>
                   <li class="header-nav__item">
@@ -97,7 +137,7 @@
             </div>
             </div>
             </div>
-        
+        </div>
         </section>
       </header>
         <main>

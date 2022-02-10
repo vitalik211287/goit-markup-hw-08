@@ -5,11 +5,11 @@
      //  margin-left: 93px;
    position: absolute;
    top: 0;
-    //  z-index: 5;
+
    @media screen and (max-width: 767px) {
   display: none;
   }
-  // display: none;
+
   @media screen and (min-width: 768px) {
   height: 80px;
 
@@ -61,7 +61,7 @@
    width: 294px;
     justify-content: space-between;
     align-items: center;
-    margin-left: 238px;
+    margin-left: 220px;
     padding-top: 32px;
     height: 100%;
     }
@@ -189,3 +189,4 @@
   //     display: none;
   //   }
   // }
+
