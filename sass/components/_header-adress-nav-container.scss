@@ -64,9 +64,8 @@
     margin-left: 238px;
     padding-top: 32px;
     height: 100%;
-  
-  }
-  .header-adress-nav__nav__item {
+    }
+  .header-adress-nav__nav__item:not(:last-child) {
     // margin-bottom: 30px;
    margin-right: 50px;
   }
@@ -78,19 +77,47 @@
     
   }
   .header-adress-nav__address__list {
+      width: 100%;
+      z-index: 3;
     @media screen and (min-width: 768px) {
   display: flex;
   flex-direction: column;
   padding-top: 21px;
   padding-bottom: 21px;
+  padding-right: 15px;
   }
   @media screen and (min-width: 1200px) {
   display: flex;
   flex-direction: row;
   padding: 0;
+ }
+}
 
-
+.header-adress-nav__address__icon-mail {
+   fill: currentColor;
+    @media screen and (min-width: 768px) {
+  margin-right: 8px;
+        width: 14px;
+  height: 10px;
   }
+  @media screen and (min-width: 1200px) {
+  margin-right: 10px;
+    width: 16px;
+  height: 12px;
+ }
+}
+.header-adress-nav__address__icon-tel {
+        fill: currentColor;
+    @media screen and (min-width: 768px) {
+   margin-right: 10px;
+        width: 10px;
+  height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+  margin-right: 10px;
+    width: 10px;
+  height: 16px;
+ }
 }
   
   
@@ -108,13 +135,15 @@
   &:active {
     color: var(--accent-color);
   }
+  
+  }
+  .header-adress-nav__nav__link:hover {
+      color: var(--accent-color);
   }
   
   .header-adress-nav__address__link {
     font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+   letter-spacing: 0.02em;
   color: var(--paragrapf-color);
   display: flex;
   align-items: center;
@@ -123,6 +152,15 @@
   &:hover, &:focus {
   color: var(--accent-color);
 }
+ @media screen and (min-width: 768px) {
+  font-size: 12px;
+  line-height: 1.17;
+//   margin: 0;
+  }
+   @media screen and (min-width: 1200px) {
+  font-size: 14px;
+  line-height: 1.1;
+  }
   }
   
   // .header__container {
@@ -133,7 +171,7 @@
   .header-adress-nav__address__item + .header-adress-nav__address__item {
    
         @media screen and (min-width: 768px) {
-  margin-left: 0;
+  margin-left: 0px;
   margin-top: 10px;
   }
   @media screen and (min-width: 1200px) {
@@ -142,10 +180,10 @@
   }
       }
 
-  .header-adress-nav__address__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+//  .header-adress-nav__address__icon {
+//     margin-right: 10px;
+//     fill: currentColor;
+//   } 
   // .header-adress-nav__modal__container, .header-adress-nav__modal__backdrop {
   //   @media screen and (min-width: 480px) {
   //     display: none;
