@@ -47,6 +47,8 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  max-height: 100%;
 }
 
 body {
@@ -459,12 +461,6 @@ body {
 
 .our-team {
   background: #f5f4fa;
-}
-
-.our-team__img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
 }
 
 .employee-social__list {
@@ -1064,11 +1060,6 @@ body {
   margin-bottom: 0;
 }
 
-.all-service-menu__list {
-  margin-bottom: -30px;
-  box-sizing: border-box;
-}
-
 .all-service-menu__paragraph-card {
   margin-top: 4px;
   font-size: 16px;
@@ -1091,6 +1082,35 @@ body {
 
 .portfolio-img {
   background-image: cover;
+}
+
+.all-service-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-bottom: -30px;
+  box-sizing: border-box;
+}
+
+.all-service-menu__item {
+  width: 450px;
+  height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .all-service-menu__item {
+    width: 354px;
+    height: 404px;
+    margin-bottom: 50px;
+    height: 404px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .all-service-menu__item {
+    width: 370px;
+    height: 404px;
+  }
 }
 
 .modal {
