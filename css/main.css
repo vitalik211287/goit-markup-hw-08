@@ -131,7 +131,7 @@ body {
   height: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 80px;
   }
@@ -139,6 +139,14 @@ body {
 
 .header__container {
   position: relative;
+  height: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    height: 80px;
+    padding-top: 26px;
+  }
 }
 
 .header-connect {
@@ -216,7 +224,7 @@ body {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .header-modal__container, .header-modal__backdrop {
     display: none;
   }
@@ -1415,7 +1423,7 @@ textarea {
   z-index: 2;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .header-modal {
     display: none;
   }
@@ -1453,7 +1461,7 @@ textarea {
   position: absolute;
   right: 22px;
   top: 22px;
-  bottom: 22px;
+  bottom: 100px;
   color: #000000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1462,7 +1470,7 @@ textarea {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .header-modal__open-btn {
     display: none;
   }
@@ -1520,14 +1528,26 @@ textarea {
 
 .header-adress-nav__container {
   display: flex;
-  width: 761px;
+  width: 100%;
   position: absolute;
-  top: 25px;
+  top: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header-adress-nav__container {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-adress-nav__container {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-adress-nav__container {
+    height: 80px;
   }
 }
 
@@ -1542,7 +1562,7 @@ textarea {
     transition: background-color 250ms linear;
     position: absolute;
     left: 0;
-    bottom: -32px;
+    bottom: -25px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -1551,8 +1571,10 @@ textarea {
 }
 
 .header-adress-nav__connect {
-  margin-left: 100px;
-  min-width: 307px;
+  margin-left: 305px;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-adress-nav__nav {
@@ -1560,10 +1582,11 @@ textarea {
   justify-content: space-between;
   align-items: center;
   margin-left: 238px;
+  padding-top: 32px;
+  height: 100%;
 }
 
 .header-adress-nav__nav__item {
-  margin-bottom: 30px;
   margin-right: 50px;
 }
 
@@ -1600,6 +1623,10 @@ textarea {
 
 .header-adress-nav__address__link:hover, .header-adress-nav__address__link:focus {
   color: var(--accent-color);
+}
+
+.header-adress-nav__address__item + .header-adress-nav__address__item {
+  margin-left: 30px;
 }
 
 .header-adress-nav__address__icon {

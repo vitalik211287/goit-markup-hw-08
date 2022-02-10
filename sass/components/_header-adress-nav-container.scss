@@ -1,14 +1,21 @@
  .header-adress-nav__container {
    display: flex;
-   width: 761px;
+   width: 100%;
+//    height: 80px;
      //  margin-left: 93px;
    position: absolute;
-   top: 25px;
-  //  z-index: 5;
-   @media screen and (max-width: 480px) {
+   top: 0;
+    //  z-index: 5;
+   @media screen and (max-width: 767px) {
   display: none;
   }
   // display: none;
+  @media screen and (min-width: 768px) {
+  height: 80px;
+  }
+  @media screen and (min-width: 768px) {
+  height: 80px;
+  }
  }
     
     .current {
@@ -21,7 +28,7 @@
       transition: background-color 250ms linear;
       position: absolute;
       left: 0;
-      bottom: -32px;
+      bottom: -25px;
       width: 100%;
       height: 4px;
       border-radius: 2px;
@@ -30,18 +37,13 @@
     }
     
   }
-  
-  
-  
-  
-  
-  
-  
  
-  
   .header-adress-nav__connect {
-    margin-left: 100px;
-    min-width: 307px;
+    margin-left: 305px;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    // width: 800px;
   //   justify-content: space-between;
   }
   
@@ -50,10 +52,12 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 238px;
+    padding-top: 32px;
+    height: 100%;
   
   }
   .header-adress-nav__nav__item {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
    margin-right: 50px;
   }
   
@@ -101,8 +105,9 @@
   //   height: 60px ;
   // //   width: 100% ;
   // }
-  .header-adress-nav__address__item {
-    // margin-bottom: 32px;
+  .header-adress-nav__address__item + .header-adress-nav__address__item {
+    margin-left: 30px;
+
   }
   .header-adress-nav__address__icon {
     margin-right: 10px;

@@ -29,7 +29,7 @@
   border: 1px solid #ececec;
 //   width: 480px;
   height: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
   height: 80px;
 }
 }
@@ -38,6 +38,11 @@
 //   display: flex;
 //   align-items: center;
 position: relative;
+ height: 60px;
+  @media screen and (min-width: 1200px) {
+  height: 80px;
+  padding-top: 26px;
+}
 
 
 }
@@ -132,7 +137,7 @@ position: relative;
   fill: currentColor;
 }
 .header-modal__container, .header-modal__backdrop {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 }
