@@ -1470,7 +1470,7 @@ textarea {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 767px) {
   .header-modal__open-btn {
     display: none;
   }
@@ -1571,10 +1571,22 @@ textarea {
 }
 
 .header-adress-nav__connect {
-  margin-left: 305px;
   height: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-adress-nav__connect {
+    padding: 0;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-adress-nav__connect {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 305px;
+  }
 }
 
 .header-adress-nav__nav {
@@ -1594,6 +1606,23 @@ textarea {
 .header-adress-nav__address__list {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header-adress-nav__address__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-adress-nav__address__list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .header-adress-nav__nav__link {
@@ -1625,8 +1654,18 @@ textarea {
   color: var(--accent-color);
 }
 
-.header-adress-nav__address__item + .header-adress-nav__address__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .header-adress-nav__address__item + .header-adress-nav__address__item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-adress-nav__address__item + .header-adress-nav__address__item {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }
 
 .header-adress-nav__address__icon {
