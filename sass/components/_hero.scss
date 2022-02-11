@@ -1,20 +1,95 @@
 .hero {
-  
-//   padding: 0;
+width: 480px;
+height: 400px;
+   margin-left: auto;
+    margin-right: auto;
   background: #2f303a;
-  height: 100%;
+
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/little-pictures/Hero3.jpg);
+    url(../../images/little-pictures/Hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-   margin-left: auto;
-  margin-right: auto;
- 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/little-pictures/Hero-tab-1x.jpg)
+  }
+    @media screen and (min-width: 1200px) {
+        // padding-left: 200px;
+        // padding-right: 200px;
+    width: 1600px;
+    height: 100%;
+        background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/little-pictures/Hero-des-1x.jpg)
+  }
+//   @media screen and (min-width: 1201px) {
+//         // padding-left: 200px;
+//         // padding-right: 200px;
+//     width: 1600px;
+//     height: 100%;
+//         background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../../images/little-pictures/Hero3.jpg)
+//   }
 }
+
+
+
+.hero__container {
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    height: 400px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 118px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 200px;
+      padding-left: 204px;
+      padding-right: 204px;
+      padding-top: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;  
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+       padding-top: 200px;
+      padding-left: 252px;
+      padding-right: 252px;
+      padding-top: 200px;
+  }
+}
+
+// .hero__container {
+//     @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .hero__container {
+//     background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../../images/little-pictures/Hero3.jpg)
+//   }
+// }
+// }
 
 .btn-container {
   display: flex;
@@ -54,36 +129,5 @@ line-height:1.36;
 
 
 }
-.hero__container {
-// width: 100%;
- 
-//   max-width: 480px
 
-  
-  @media screen and (max-width: 480px) {
-    width: 480px;
-    height: 400px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 118px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-top: 200px;
-      padding-left: 204px;
-      padding-right: 204px;
-      padding-top: 118px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;  
-    height: 600px;
-       padding-top: 200px;
-      padding-left: 252px;
-      padding-right: 252px;
-      padding-top: 200px;
-    
-  }
-
-  
-}
 
