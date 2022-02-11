@@ -4,7 +4,7 @@ height: 400px;
    margin-left: auto;
     margin-right: auto;
   background: #2f303a;
-
+// padding: 118px 60px 0 60px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -50,7 +50,7 @@ height: 400px;
 
 
 .hero__container {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 480px;
     height: 400px;
   padding-left: 60px;

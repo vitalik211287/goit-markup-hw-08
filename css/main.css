@@ -62,7 +62,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 0px) {
   body {
     width: 480px;
   }
@@ -281,7 +281,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero__container {
     width: 480px;
     height: 400px;
