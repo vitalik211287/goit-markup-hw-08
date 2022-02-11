@@ -4,12 +4,20 @@ height: 400px;
    margin-left: auto;
     margin-right: auto;
   background: #2f303a;
-// padding: 118px 60px 0 60px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/little-pictures/Hero.jpg);
+    url(../../images/Hero-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/Hero-mob-2x.jpg);  
+  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,33 +29,37 @@ height: 400px;
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/little-pictures/Hero-tab-1x.jpg)
+    url(../../images/Hero-tab-1x.jpg);
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/Hero-tab-2x.jpg);  
+  }
   }
     @media screen and (min-width: 1200px) {
-        // padding-left: 200px;
-        // padding-right: 200px;
     width: 1600px;
     height: 100%;
         background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/little-pictures/Hero-des-1x.jpg)
+    url(../../images/Hero-des-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/Hero-des-2x.jpg);  
   }
-//   @media screen and (min-width: 1201px) {
-//         // padding-left: 200px;
-//         // padding-right: 200px;
-//     width: 1600px;
-//     height: 100%;
-//         background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../../images/little-pictures/Hero3.jpg)
-//   }
+  }
 }
-
-
 
 .hero__container {
   @media screen and (max-width: 767px) {
@@ -76,26 +88,10 @@ height: 400px;
   }
 }
 
-// .hero__container {
-//     @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .hero__container {
-//     background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../../images/little-pictures/Hero3.jpg)
-//   }
-// }
-// }
-
 .btn-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-//   padding-bottom: 118px;
 }
 
 .hero__btn {
@@ -108,9 +104,6 @@ height: 400px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
-  // @media screen and (min-width: 768px) {
-  //   width: 200px;
-  // }
 }
 
 .hero__title {
@@ -126,8 +119,6 @@ margin-bottom: 30px;
  font-size: 44px;
 line-height:1.36;
   }
-
-
 }
 
 
