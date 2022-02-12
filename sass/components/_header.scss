@@ -1,11 +1,8 @@
-
-
 .current {
   @media screen and (min-width: 768px) {
     color: var(--accent-color);
     &::after {
     content: "  ";
-    // display: flex;
     border-radius: 2%;
     transition: background-color 250ms linear;
     position: absolute;
@@ -17,28 +14,17 @@
     background-color: var(--accent-color);
   }
   }
-  
 }
-
-
-
-
 
 .header {
   background: var(--background-color);
   border: 1px solid #ececec;
-//   width: 480px;
   height: 60px;
   @media screen and (min-width: 768px) {
   height: 80px;
 }
 }
 
-// .header__container {
- 
-//   height: 60px ;
-// //   width: 100% ;
-// }
 .header__container {
  padding: 16px 331px 16px 15px;
 position: relative;
@@ -53,32 +39,19 @@ position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
 }
 
 .header-connect {
   margin-left: auto;
   min-width: 307px;
-//   justify-content: space-between;
 }
 
 .header-nav {
-  // min-width: 294px;
-  // justify-content: space-between;
-  // align-items: center;
-  // margin-left: 93px;
   margin-bottom: 302px;
 }
+
 .header-nav__item {
   margin-bottom: 30px;
-  // padding-left: 40px;
-}
-
-.header-nav__list,
-.header-address__list {
-  // display: flex;
-  // justify-content: space-between;
-  
 }
 
 .header-logo {
@@ -89,9 +62,9 @@ position: relative;
   color: var(--h-color);
   position: absolute;
   z-index: 3;
-
-//   padding-bottom: 165px;
-
+  @media screen and (max-width: 768px) {
+display: none;
+  }
 }
 
 .header-logo__web {
@@ -101,6 +74,7 @@ position: relative;
   line-height: 1.17;
   color: var(--accent-color);
 }
+
 .header-nav__link {
   width: 49px;
   font-weight: 500;
@@ -123,9 +97,6 @@ position: relative;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--paragrapf-color);
-//   display: flex;
-//   align-items: center;
-//   margin-left: 30px;
   transition: var(--transition);
   &:hover, &:focus {
   color: var(--accent-color);

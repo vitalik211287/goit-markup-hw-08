@@ -83,16 +83,13 @@ outline: none;
 
 .modal-heckbox__link {
 color: var(--accent-color);
-// margin-left: 2px;
-
     }
+
     .modal-heckbox__container {
         position: relative;
     }
 
 .modal-heckbox__text {
-// display: flex;
-// align-items: center;
 margin-left: 24px;
 font-size: 12px;
 line-height: 1.17;
@@ -112,8 +109,6 @@ margin-right: 7px;
 @media screen and (min-width: 1200px) {
   left: 13px;
      }
-// display: flex;
-// align-items: center;
     }
     &:hover  span {
         cursor: pointer;
@@ -137,8 +132,3 @@ padding-left: 13px;
     fill: #FFFFFF;
      }
 
-// .modal-heckbox__par {  font-weight: normal;
-// font-size: 12px;
-// line-height: 14px;
-// letter-spacing: 0.03em;
-// color: #757575;}
