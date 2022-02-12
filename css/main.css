@@ -258,7 +258,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/Hero-mob-1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-mob-1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
