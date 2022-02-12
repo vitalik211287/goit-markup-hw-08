@@ -62,9 +62,9 @@ position: relative;
   color: var(--h-color);
   position: absolute;
   z-index: 3;
-  @media screen and (max-width: 768px) {
-display: none;
-  }
+//   @media screen and (max-width: 768px) {
+// display: none;
+//   }
 }
 
 .header-logo__web {

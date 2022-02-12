@@ -200,12 +200,6 @@ body {
   z-index: 3;
 }
 
-@media screen and (max-width: 768px) {
-  .header-logo {
-    display: none;
-  }
-}
-
 .header-logo__web {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -1507,7 +1501,7 @@ textarea {
 .header-modal {
   padding: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media screen and (min-width: 767px) {
