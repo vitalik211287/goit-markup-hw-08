@@ -580,6 +580,10 @@ body {
 .our-team__item {
   width: 450px;
   height: 630px;
+  margin-bottom: 0;
+}
+
+.our-team__item:not(:last-child) {
   margin-bottom: 30px;
 }
 

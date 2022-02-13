@@ -16,9 +16,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
 } 
 
 .our-team__list {
+ 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +33,11 @@ flex-wrap: nowrap;
 .our-team__item {
     width: 450px;
     height: 630px;
-    margin-bottom: 30px;
+       &:not(:last-child) {
+      margin-bottom: 30px;
+  }
+   margin-bottom: 0; 
+   
  
   @media screen and (min-width: 768px) {
 
