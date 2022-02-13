@@ -1,9 +1,10 @@
 .current {
+ color: var(--accent-color);
+
   @media screen and (min-width: 768px) {
-    color: var(--accent-color);
+   color: var(--accent-color);
     &::after {
     content: "  ";
-    border-radius: 2%;
     transition: background-color 250ms linear;
     position: absolute;
     left: 0;

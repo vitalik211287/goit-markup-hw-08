@@ -125,13 +125,16 @@ body {
   }
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .current {
     color: var(--accent-color);
   }
   .current::after {
     content: "  ";
-    border-radius: 2%;
     transition: background-color 250ms linear;
     position: absolute;
     left: 0;
