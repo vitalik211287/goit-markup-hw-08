@@ -1,7 +1,9 @@
 .modal {
   padding: 0;
+  height: 100%;
 }
 .modal__backdrop {
+    box-sizing: border-box;
 position: fixed;
 top: 0%;
 left: 0;
@@ -22,18 +24,20 @@ border-radius: 4px;
 position: absolute;
 top: 50%;
 bottom: 50%;
-left: 50%;
+left: 54%;
 transform: translate(-55%, -50%);
 padding: 40px;
+margin-left: auto;
+margin-right: auto;
 @media screen and (min-width: 768px) {
-  top: 55%;
+top: 55%;
 bottom: 50%;
 left: 50%;
   }
 @media screen and (min-width: 1200px) {
   width: 528px;
 height: 581px;
-top: 40%;
+top: 50%;
 bottom: 50%;
 left: 50%;
   }
