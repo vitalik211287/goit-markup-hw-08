@@ -88,7 +88,10 @@
   }
   
 .card{
+  @media screen and (min-width: 768px) {
  height: 146px
+    }  
+
 }
 
 .service-menu__list {
