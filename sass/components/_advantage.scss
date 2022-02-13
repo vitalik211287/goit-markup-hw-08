@@ -3,7 +3,10 @@ background-color: ffffff;
 }
 
 .advantage__item {
-  margin-bottom: 30px;
+    margin-bottom: 0;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
   @media screen and (min-width: 768px) {
     &:nth-child(2n+1){
       margin-right: 30px;
@@ -11,7 +14,6 @@ background-color: ffffff;
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
     }
-
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -21,6 +23,7 @@ background-color: ffffff;
   }
   }
 }
+
 
 .advantage__link {
   display: flex;

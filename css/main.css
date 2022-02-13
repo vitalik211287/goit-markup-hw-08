@@ -379,6 +379,10 @@ body {
 }
 
 .advantage__item {
+  margin-bottom: 0;
+}
+
+.advantage__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
