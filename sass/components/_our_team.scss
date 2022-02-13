@@ -68,7 +68,10 @@ height: 428px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+margin-bottom: 50px;
+}
 }
 
 .employee__title {

@@ -619,7 +619,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    margin-bottom: 50px;
+  }
 }
 
 .employee__title {
@@ -670,12 +676,6 @@ body {
 
 .customers__item:nth-last-child(-n+2) {
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .customers__item:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
-  }
 }
 
 @media screen and (min-width: 768px) {
