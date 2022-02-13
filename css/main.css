@@ -668,6 +668,10 @@ body {
   margin-bottom: 30px;
 }
 
+.customers__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 480px) {
   .customers__item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
