@@ -16,8 +16,26 @@
   height: 80px;
   }
  }
-    
+
+
+    .header-adress-nav__nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  transition: var(--transition);
+  position: relative;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+  }
+
+      
     .current {
+        color: var(--accent-color);
     @media screen and (min-width: 768px) {
       color: var(--accent-color);
       &::after {
@@ -34,7 +52,6 @@
       background-color: var(--accent-color);
     }
     }
-    
   }
  
   .header-adress-nav__connect {
@@ -114,21 +131,8 @@
 }
   
   
-  .header-adress-nav__nav__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--h-color);
-  transition: var(--transition);
-  position: relative;
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--accent-color);
-  }
-  
-  }
+
+
   .header-adress-nav__nav__link:hover {
       color: var(--accent-color);
   }

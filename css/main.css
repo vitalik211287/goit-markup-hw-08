@@ -1652,6 +1652,24 @@ textarea {
   }
 }
 
+.header-adress-nav__nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  transition: var(--transition);
+  position: relative;
+}
+
+.header-adress-nav__nav__link:hover, .header-adress-nav__nav__link:focus, .header-adress-nav__nav__link:active {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .current {
     color: var(--accent-color);
@@ -1770,20 +1788,6 @@ textarea {
     width: 10px;
     height: 16px;
   }
-}
-
-.header-adress-nav__nav__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--h-color);
-  transition: var(--transition);
-  position: relative;
-}
-
-.header-adress-nav__nav__link:hover, .header-adress-nav__nav__link:focus, .header-adress-nav__nav__link:active {
-  color: var(--accent-color);
 }
 
 .header-adress-nav__nav__link:hover {
