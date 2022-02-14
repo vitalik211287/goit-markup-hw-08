@@ -42,7 +42,9 @@
 
 .what-are-we-doing__list {
   display: flex;
+  justify-content: center;
 @media screen and (max-width: 1200px) {
-  display: none;  
+  display: none; 
+  justify-content: center; 
 }
 }
