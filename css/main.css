@@ -578,7 +578,7 @@ body {
 }
 
 .our-team__item {
-  width: 450px;
+  min-width: 100%;
   height: 630px;
   margin-bottom: 0;
 }
