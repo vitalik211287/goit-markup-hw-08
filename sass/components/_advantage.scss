@@ -45,6 +45,7 @@ min-width: 100%;
 }
 
 .advantage__list {
+  width: 100%;
 @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
@@ -90,4 +91,7 @@ min-width: 100%;
       width: 354px;
       width: 270px;
        }
+}
+.team-img{
+  width: 100%;
 }

@@ -429,6 +429,10 @@ body {
   }
 }
 
+.advantage__list {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .advantage__list {
     display: flex;
@@ -487,6 +491,10 @@ body {
     width: 354px;
     width: 270px;
   }
+}
+
+.team-img {
+  width: 100%;
 }
 
 .what-are-we-doing__text {
