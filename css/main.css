@@ -62,9 +62,19 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
+  body {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
   body {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -99,6 +109,7 @@ body {
 }
 
 .container {
+  width: 100%;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -159,7 +170,10 @@ body {
 }
 
 .header__container {
-  padding: 16px 331px 16px 15px;
+  width: 100%;
+  height: 60px;
+  padding-top: 16px;
+  padding-left: 15px;
   position: relative;
   height: 60px;
 }
@@ -182,7 +196,7 @@ body {
 
 .header-connect {
   margin-left: auto;
-  min-width: 307px;
+  min-width: 100%;
 }
 
 .header-nav {
@@ -591,7 +605,7 @@ body {
 
 .our-team__item {
   width: 100%;
-  height: 630px;
+  height: 100%;
   margin-bottom: 0;
 }
 
@@ -681,7 +695,7 @@ body {
 }
 
 .customers__item {
-  width: 210px;
+  width: 100%;
   height: 92px;
   margin-bottom: 30px;
 }
@@ -690,7 +704,22 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 320px) {
+  .customers__item {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers__item {
+    width: 210px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .customers__item {
+    width: 226px;
+  }
   .customers__item:nth-last-child(-n + 3) {
     margin-bottom: 0px;
   }
@@ -698,6 +727,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .customers__item {
+    width: 170px;
     margin-bottom: 0;
   }
 }
@@ -709,7 +739,7 @@ body {
 }
 
 .customers__link {
-  width: 100%;
+  min-width: 100%;
   height: 92px;
   display: flex;
   align-items: center;
@@ -742,24 +772,25 @@ body {
 
 .customers__container {
   width: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 480px) {
   .customers__container {
     height: 519px;
-    width: 480px;
+    width: 100%;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   .customers__container {
     height: 397px;
     width: 768px;
   }
 }
 
-@media screen and (min-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (min-width: 1200px) {
   .customers__container {
     height: 370px;
     width: 1200px;
@@ -772,6 +803,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -954,7 +986,7 @@ body {
 }
 
 .lable-input__container {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -1558,6 +1590,7 @@ textarea {
 }
 
 .header-modal__backdrop {
+  width: 100%;
   box-sizing: border-box;
   position: fixed;
   top: 0%;
@@ -1570,7 +1603,7 @@ textarea {
 .header-modal__container {
   padding-top: 40px;
   padding-left: 40px;
-  width: 480px;
+  width: 100%;
   height: 796px;
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1589,7 +1622,7 @@ textarea {
   align-items: center;
   position: absolute;
   right: 22px;
-  top: 22px;
+  top: 50%;
   bottom: 100px;
   color: #000000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
