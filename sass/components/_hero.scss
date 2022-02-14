@@ -1,5 +1,5 @@
 .hero {
-width: 480px;
+width: 100%;
 height: 400px;
    margin-left: auto;
     margin-right: auto;
@@ -63,7 +63,7 @@ height: 400px;
 
 .hero__container {
   @media screen and (max-width: 767px) {
-    width: 480px;
+    width: 100%;
     height: 400px;
   padding-left: 60px;
   padding-right: 60px;
