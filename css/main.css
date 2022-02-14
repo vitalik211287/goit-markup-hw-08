@@ -698,7 +698,7 @@ body {
 }
 
 .customers__link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   display: flex;
   align-items: center;
@@ -727,6 +727,10 @@ body {
 
 .customers {
   background-color: #ffffff;
+}
+
+.customers__container {
+  width: 100%;
 }
 
 @media screen and (min-width: 767px) {
