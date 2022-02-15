@@ -88,6 +88,9 @@ position: relative;
 }
 
 .header-nav__link {
+    @media screen and (min-width: 320px) {
+   margin-bottom: 302px;
+}  
   width: 49px;
   font-weight: 500;
   font-size: 40px;
