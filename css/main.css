@@ -1680,7 +1680,7 @@ textarea {
   color: #2196f3;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 410px) {
   .social__icon {
     font-weight: 500;
     font-size: 18px;
