@@ -46,6 +46,7 @@ position: relative;
   height: 80px;
   padding-top: 24px;
   padding-bottom: 25px;
+ 
 }
 }
 
@@ -73,10 +74,10 @@ position: relative;
   line-height: 1.17;
   color: var(--h-color);
   position: absolute;
-  z-index: 3;
-//   @media screen and (max-width: 768px) {
-// display: none;
-//   }
+//   z-index: 3;
+  @media screen and (min-width: 1200px) {
+padding-left: 200px;
+  }
 }
 
 .header-logo__web {

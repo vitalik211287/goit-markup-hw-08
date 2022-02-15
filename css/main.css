@@ -220,7 +220,12 @@ body {
   line-height: 1.17;
   color: var(--h-color);
   position: absolute;
-  z-index: 3;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    padding-left: 200px;
+  }
 }
 
 .header-logo__web {
@@ -1045,6 +1050,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 480px) {
+  .lable-input__input {
+    width: 450px;
+  }
+}
+
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1349,7 +1360,6 @@ body {
 
 .modal__container {
   position: absolute;
-  z-index: 4;
   width: 100%;
   height: 609px;
   background-color: var(--background-color);
@@ -1363,6 +1373,12 @@ body {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__container {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1608,7 +1624,6 @@ textarea {
   height: 100%;
   padding: 0;
   position: absolute;
-  z-index: 4;
 }
 
 @media screen and (min-width: 767px) {
@@ -1632,11 +1647,22 @@ textarea {
   padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
-  width: 100%;
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .header-modal__container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-modal__container {
+    width: 480px;
+  }
 }
 
 .header-modal__icon {
@@ -1760,6 +1786,13 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-adress-nav__container {
+    height: 80px;
+    padding-left: 200px;
+  }
+}
+
 .header-adress-nav__nav__link {
   font-weight: 500;
   font-size: 14px;
@@ -1837,7 +1870,6 @@ textarea {
 
 .header-adress-nav__address-list {
   width: 100%;
-  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
