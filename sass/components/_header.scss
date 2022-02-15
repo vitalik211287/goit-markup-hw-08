@@ -55,7 +55,11 @@ position: relative;
 }
 
 .header-nav {
-  margin-bottom: 302px;
+    margin-bottom: 0;
+  @media screen and (min-width: 320px) {
+   margin-bottom: 302px;
+}  
+ 
 }
 
 .header-nav__item {
