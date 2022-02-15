@@ -3,12 +3,12 @@
 }
 
 .all-service-menu__paragraph {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   height: 100%;
   width: 100%;
-  padding: 63px 24px 63px 24px;
+  padding: 25px 10px 15px 10px;
   color: #ffffff;
   letter-spacing: 0.03em;
   background: rgba(33, 150, 243, 0.9);
@@ -16,6 +16,14 @@
   top: 0;
   transform: translateY(100%);
   transition: transform 250ms;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    padding: 77px 24px 77px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding: 49px 24px 77px 24px;
+  }
 }
 
 
