@@ -26,65 +26,62 @@
   }
 }
 
-
 .all-service-menu__container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
- &:hover 
-{
+  &:hover {
     .all-service-menu__paragraph {
-  transform: translateY(0);
-}
-}
-@media screen and (min-width: 768px) {
-  width: 354px;
-  height: 294px;
-}
-@media screen and (min-width: 1200px) {
-  width: 370px;  
-  height: 294px;
-     
-}
+      transform: translateY(0);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .service-menu {
   background-color: #ffffff;
 }
 
-
 .all-service-menu__item {
   width: 100%;
   margin-bottom: 30px;
-    width: 100%;
+  width: 100%;
   height: 100%;
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 404px;
-    &:nth-child(-n+2){
-    height: 440px;
-     }
-    &:nth-child(2n+1){
-    margin-right: 30px;
+    &:nth-child(-n + 2) {
+      height: 440px;
     }
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
     }
+  }
   @media screen and (min-width: 1200px) {
-    width: 370px;  
+    width: 370px;
     height: 404px;
-      &:nth-child(-n+2){
-    height: 404px;
-     }
-  margin-right: 30px;
-  &:nth-child(3n) {
-  margin-right: 0;}
+    &:nth-child(-n + 2) {
+      height: 404px;
+    }
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
   &:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  transition: box-shadow, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition: box-shadow, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .all-service-menu__container-card {
@@ -95,15 +92,15 @@
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
   position: relative;
-  }
-  
-.card{
+}
+
+.card {
   @media screen and (min-width: 768px) {
- height: 146px;
-    }  
- @media screen and (min-width: 1200px) {
- height: 110px;
-    } 
+    height: 146px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 110px;
+  }
 }
 
 .service-menu__list {
@@ -112,10 +109,10 @@
   justify-content: flex-start;
   margin-bottom: 50px;
   @media screen and (min-width: 768px) {
-      justify-content: center;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -131,27 +128,28 @@
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-  color: var(--background-color);
-  background: #2196f3;
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+  &:hover,
+  &:focus {
+    color: var(--background-color);
+    background: #2196f3;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.service-menu__list>li {
+.service-menu__list > li {
   margin-right: 8px;
   margin-bottom: 15px;
 }
-.service-menu__list>li:nth-last-child(-n+2) {
+.service-menu__list > li:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
 .all-service-menu__paragraph-card {
-    // height: 100%;
+  // height: 100%;
   margin-top: 4px;
-    font-size: 16px;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--paragrapf-color);
@@ -169,7 +167,7 @@
   color: var(--h-color);
 }
 .portfolio-img {
-   background-image: cover;
+  background-image: cover;
   width: 100%;
   display: block;
 }
@@ -177,10 +175,7 @@
 .all-service-menu__list {
   display: flex;
   flex-wrap: wrap;
-   margin-bottom: 50px;
-    margin-bottom: -30px;
-    box-sizing: border-box;
-  }
-
-
-
+  margin-bottom: 50px;
+  margin-bottom: -30px;
+  box-sizing: border-box;
+}
