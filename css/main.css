@@ -1257,7 +1257,6 @@ body {
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
   position: relative;
-  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
